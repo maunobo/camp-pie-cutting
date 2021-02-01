@@ -7,16 +7,15 @@
       width="130"
       height="130"
       class="mx-auto my-5 md:my-10 logo"
-      style="border-radius: 100px;"
-      src="../assets/rama-logo.png"
+      src="../assets/doubleip-logo.png"
     />
 
-    <h2 class="font-bold text-xl">Rama Camp 2021</h2>
+    <h2 class="font-bold text-xl">e-vasilopita 2021</h2>
 
     <form v-on:submit.prevent="submit" class="mt-10">
      <input 
         type='text' 
-        placeholder='Por Rama' 
+        placeholder='Εισάγεται όνομα' 
         class="border-black"
         v-model='name'
       />
@@ -40,8 +39,8 @@
     </div>
     <button v-if="allNames.length" class="border-black block mx-auto mt-5 text-xs" @click='deleteFirst'>Σβήσιμο Τελευταίου</button>
   </div>
-  <img class="thai-bottom r" src="/thai-bottom-r.png" alt="thai-bottom-r">
-  <img class="thai-bottom l" src="/garuda.png" alt="thai-bottom-r">
+  <!-- <img class="thai-bottom r" src="/thai-bottom-r.png" alt="thai-bottom-r">
+  <img class="thai-bottom l" src="/garuda.png" alt="thai-bottom-r"> -->
 </template>
 
 <script>
@@ -136,7 +135,7 @@ img.thai-bottom {
 @media screen and (min-width: 768px) {
   img.logo {
     width: 200px;
-    height: 200px;
+    // height: 200px;
   }
   img.thai-bottom { display: block; }
 }

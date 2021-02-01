@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <h1 class="font-bold text-2xl">Ας δούμε ποιός θα κερδίσει το φλουρί..</h1>
     <div class = "flex items-center justify-center">
       <div class="circle-div flex items-center justify-center" id="outerCirlceId">
         <div class="center-div" id="centerDivId"></div>
@@ -8,9 +9,10 @@
   </div>
   <div v-if="winner" class="absolute p-10 md:p-20 w-10/12 md:w-7/12 winner">
     <span class="absolute top-5 right-10 cursor-pointer text-lg" @click="winner=''">&#10005;</span>
-    <h1 class="text-2xl font-bold mb-1">สวัสดีปีใหม่ 2021</h1>
+    <h1 class="text-2xl font-bold mb-1">Τυχερός 2021</h1>
     <h1 class="text-2xl font-bold mb-10">{{ winner }}</h1>
-    <img src="/thai-baht.png" class="m-auto" height="400" width="400" alt="winner">
+    <img src="/dogecoin.png" class="m-auto" height="400" width="400" alt="winner">
+    <h1 class="text-2xl font-bold mb-1">Συγχαρητήρια!</h1>
   </div>
 </template>
 
@@ -148,6 +150,7 @@ export default {
   border-radius: 50px;
   box-shadow: 15px 16px 40px -15px #0000009e;
   animation: winnerFade 1s ease-in-out forwards;
+  z-index: 1500;
 }
 @screen md {
   .winner {
@@ -181,7 +184,7 @@ export default {
   background-position: center;
 }
 .circle-div::before {
-  content: 'Rama Camp 2021';
+  content: 'DoubleIP 2021';
   width: 215px;
   white-space: pre-wrap;
   font-size: 35px;
@@ -190,6 +193,9 @@ export default {
   position: absolute;
   top: 38%;
   text-shadow: 4px 15px 28px black;
+  z-index: 1000;
+  background: rgba(246, 247, 246, 0.9);
+  border-radius: 25px;
 }
 .circle-div .line {
   padding:0px;
